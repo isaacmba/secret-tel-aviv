@@ -1,3 +1,9 @@
+*{
+-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+box-sizing: border-box;
+}
+
 body{
 	margin:0;
 	background-color: #ddd;
@@ -68,9 +74,61 @@ section {
 .food img {
   width: 100%;
   padding: 20px;
+
 }
 .column-inner{
 	padding: 20px;
+}
+.column-70{
+  width: 70%;
+  float:left;
+  height:500px;
+  background: url("https://a2ua.com/bar/bar-006.jpg");
+
+}
+.column-70 h1{
+  background: white;
+}
+.column-70-inner{
+  padding: 0px 25px;
+}
+.column-30 {
+  width: 30%;
+  float: left;
+  /*background: white;*/
+  height: 500px;
+}
+
+.column-30 h1{
+  font-family: "Merriweather", sans-serif;
+}
+.column-30-inner{
+  padding: 0px 25px;
+}
+
+.wrap {
+  background-color: white;
+}
+
+.row:before{
+  display: table;
+  content: "";
+}
+.container:after, .row:after{
+  display: table;
+  content: "";
+  clear: both;
+}
+@media (max-width: 700px){
+  .column{
+    width:100%;
+  }
+}
+@media (max-width: 700px){
+  .column-70{
+    width:100%;
+  }
+  
 }
 
 
